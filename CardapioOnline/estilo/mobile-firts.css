@@ -7,7 +7,7 @@
     --cor2:#BF7200;
     --cor3:#960707f3;
     --cor4:#FEED01;
-    --cor5:#27CD01;
+    --cor5:#53df34;
 
     --font0:'Days One', sans-serif;
     --font1:'McLaren', cursive;
@@ -33,30 +33,49 @@ body {
     font-family: var(--font4);
 }
 header {
-    width: 300px;
+    margin: auto;
+    width: 270px;
     background-color: var(--cor2);
     font-family: var(--font1);
     text-align: center;
     font-size: 1em;
     font-weight: normal;
+    border-bottom: 10px solid var(--cor1);
     
 }
 
 menu {
-    display: none;
     position: absolute;
+    left: 10px;
     flex-direction: column;
-    width: 30%;
-    width: 150px;
-    height: 100%;
+    width: 140px;
+    height: 696px;
     background-color: var(--cor5);
     text-align: left;
-    padding: 40px 0 10px 10px;
+    padding: 40px 5px 10px 0px;
+}
+
+menu > span#abrir-menu {
+    color: white;
+    position: absolute;
+    right: 80%;
+    top: 10px;
+    color: white;
+   
+}
+
+menu > span#fechar-menu {
+    position: absolute;
+    left: 80%;
+    top: 10px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 li {
-    padding: 10px 0 10px 0;
-    margin: 10px 10px 10px 0;
+    padding: 10px 0 10px 5px;
+    margin: 10px 20px 10px 0;
     list-style-type: none;
 }
 li > a {
@@ -66,8 +85,7 @@ li > a {
 }
 
 main{
-    padding: 10px;
-    width: 300px;
+    width: 270px;
     margin: auto;
     background-color: var(--cor4);
 }
