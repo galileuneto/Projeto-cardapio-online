@@ -3,123 +3,202 @@
 @import url('https://fonts.googleapis.com/css2?family=Days+One&family=McLaren&family=Mukta+Mahee:wght@200&family=Rowdies:wght@300&display=swap');
 
 :root {
-    --cor1:#FCA31C;
-    --cor2:#BF7200;
-    --cor3:#960707f3;
-    --cor4:#FEED01;
-    --cor5:#53df34;
+    --cor1: #FCA31C;
+    --cor2: #BF7200;
+    --cor3: #960707f3;
+    --cor4: #FEED01;
+    --cor5: #53df34;
 
-    --font0:'Days One', sans-serif;
-    --font1:'McLaren', cursive;
-    --font2:'Mukta Mahee', sans-serif;
-    --font3:'Rowdies', cursive;
-    --font4:Arial, Helvetica, sans-serif
-
-    
+    --font0: 'Days One', sans-serif;
+    --font1: 'McLaren', cursive;
+    --font2: 'Mukta Mahee', sans-serif;
+    --font3: 'Rowdies', cursive;
+    --font4: Arial, Helvetica, sans-serif
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html, body {
-    height: 100vh;
-    width: 100vw;
-}
 
 body {
-    background-color: var(--cor1);
+    background-image: linear-gradient(to bottom, #FCA31C, #BF7200);
     font-family: var(--font4);
+    height: 100%;
+    width: 100%;
 }
+
 header {
+    padding-top: 55px;
     margin: auto;
-    width: 270px;
-    background-color: var(--cor2);
+    height: 20vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #FCA31C, #BF7200);
     font-family: var(--font1);
     text-align: center;
-    font-size: 1em;
+    font-size: 1.5vw;
     font-weight: normal;
     border-bottom: 10px solid var(--cor1);
-    
+
 }
 
-menu {
-    position: absolute;
-    left: 10px;
-    flex-direction: column;
-    width: 140px;
-    height: 696px;
+.header,
+.navigation_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.header {
     background-color: var(--cor5);
-    text-align: left;
-    padding: 40px 5px 10px 0px;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 3.5em;
 }
 
-menu > span#abrir-menu {
-    color: white;
-    position: absolute;
-    right: 80%;
-    top: 10px;
-    color: white;
-   
+.content {
+    text-align: center;
+    transition: 1s;
 }
 
-menu > span#fechar-menu {
-    position: absolute;
-    left: 80%;
-    top: 10px;
-    color: white;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-li {
-    padding: 10px 0 10px 5px;
-    margin: 10px 20px 10px 0;
-    list-style-type: none;
-}
-li > a {
-    font-size: 1em;
+.navigation_header a {
+    text-align: center;
+    padding: 30px;
     text-decoration: none;
-    color: var(--cor3);
+    color: black;
+    font-weight: bold;
+    transition: 1s;
 }
 
-main{
-    width: 270px;
+.navigation_header a:hover {
+    color: white;
+}
+
+
+.navigation_header {
+    gap: 2em;
+    z-index: 2;
+}
+
+
+.btn_icon_header {
+    background: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+
+main {
+    border-radius: 10px;
+    height: 100%;
+    width: 570px;
     margin: auto;
     background-color: var(--cor4);
 }
 
-
-
-div.lanche {
-    
-  
-   
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    font-family: var(--font0);
+    font-size: 1.2em;
 }
-div.lanche > p {
+
+div.lanche>p {
 
     text-indent: 5px;
     text-align: justify;
-    padding: 5px 5px 5px 1px; 
+    padding: 5px 5px 5px 1px;
     font-size: 0.9em;
 }
 
-img {
-    width: 120px;
+.lanche {
+    display: flex;
+    /* Usar flexbox */
+    flex-direction: column;
+    /* Empilhar elementos verticalmente */
+    align-items: center;
+    /* Centralizar elementos horizontalmente */
+    text-align: center;
+    /* Centralizar texto horizontalmente */
+    margin-bottom: 20px;
+    /* Espaçamento entre os lanches */
+}
+
+.lanche img {
+    max-width: 100%;
+    /* Garantir que a imagem se ajuste à largura da coluna */
+    margin-bottom: 10px;
+    /* Espaçamento entre a imagem e o texto */
 }
 
 
 
 
+@media screen and (max-width: 768px) {
+    .navigation_header {
+        position: absolute;
+        background-color: var(--cor5);
+        flex-direction: column;
+        left: 0;
+        top: 200px;
+        height: 100%;
+        width: 20vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
 
-#aperitivo  {
-    display: none;
-}
-#bebida {
-    display: none;
+
+    }
+
+    header {
+        padding-top: 55px;
+        font-size: 1em;
+        margin: auto;
+        height: 20vh;
+        width: 100%;
+        background-color: var(--cor2);
+        font-family: var(--font1);
+        text-align: center;
+
+        font-weight: normal;
+        border-bottom: 10px solid var(--cor1);
+
+    }
+
+    main {
+
+        border-radius: 10px;
+        height: 100%;
+        width: 470px;
+        margin: auto;
+        background-color: var(--cor4);
+    }
+
+    section {
+        padding: 10px;
+        margin-top: 10px;
+        font-family: var(--font0);
+    }
+
+    .btn_icon_header {
+        display: block;
+    }
 }
 
-#sobremesa {
-    display: none;
+@keyframes showSidebar {
+    from {
+        margin-left: -100vw;
+    }
+
+    to {
+        margin-left: 0vw;
+    }
 }

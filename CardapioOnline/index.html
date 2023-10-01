@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardápio Online-Restaurante Delícias Digitais</title>
-    <script src="script.js"></script>
+    
     <link rel="stylesheet" href="estilo/mobile-firts.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -16,109 +18,123 @@
     <header>
         <h1>Cardápio Online - Restaurante Delícias Digitais</h1>
     </header>
-
-    <div id="container">
-        <menu id="menu-lateral">
-            <span id="abrir-menu" class="material-symbols-outlined" onclick="abrir()">
-                menu
-            </span>
-            <span id="fechar-menu" class="material-symbols-outlined" onclick="fechar()">
-                close
-            </span>
-            <p id="titulo-menu">Menu</p>
-            <ul>
-                <li><a href="#">Pratos Principais</a></li>
-                <li><a href="#">Aperitivos</a></li>
-                <li><a href="#">Bebidas</a></li>
-                <li><a href="#">Sobremesas</a></li>
-            </ul>
-        </menu>
-    </div>
-    <main>
-        <section>
-            <div id="prato-principal">
-                <div class="lanche">
-                    <h2>Hambúrguer Gourmet</h2>
-                    <img src="imagens/burguer-2.jpg" alt="Hambúrguer Gourmet">
-                    <p>Descrição: Um hambúrguer suculento com queijo derretido, alface fresca, tomate, cebola
-                        caramelizada e nosso molho especial.</p>
-                    <p>Preço: R$ 15,00</p>
-                </div>
-                <div class="lanche">
-                    <h2>Massa à Carbonara</h2>
-                    <img src="imagens/carbonara.jpg" alt="Massa à Carbonara">
-                    <p>
-                        Descrição: Espaguete al dente com bacon crocante, ovos, queijo parmesão e pimenta preta.
-                        Preço: R$ 18,00
-                    </p>
-
-                </div>
-                <div class="lanche">
-                    <h2>Salmão Grelhado</h2>
-                    <img src="imagens/salmao-grelhado.jpg" alt="Salmão Grelhado">
-                    <p>Descrição: Salmão fresco grelhado e servido com legumes salteados e arroz integral.</p>
-                    <p>Preço: R$ 20,00</p>
-                </div>
-                <div id="aperitivo">
-                    <div class="lanche">
-                        <h2>Bruschetta de Tomate e Manjericão</h2>
-                        <img src="imagens/Bruschetta.jpg" alt="Bruschetta de Tomate e Manjericão">
-                        <p>Descrição: Fatias de pão crocante cobertas com tomate fresco, manjericão, alho e azeite de
-                            oliva.</p>
-                        <p>Preço: R$ 8,00</p>
-                    </div>
-                    <div class="lanche">
-                        <h2>Batatas Fritas Especiais</h2>
-                        <img src="imagens/batata-frita.jpg" alt="Batatas Fritas Especiais">
-                        <p>Descrição: Batatas fritas crocantes temperadas com ervas e servidas com molho de queijo
-                            cheddar.</p>
-                        <p>Preço: R$ 10,00</p>
-                    </div>
-                </div>
-
-
-                <div id="bebida">
-                    <div class="lanche">
-                        <h2>Refrigerante (Lata)</h2>
-                        <img src="imagens/refigerante.jpg" alt="Refrigerante (Lata)">
-                        <p>Descrição: Escolha entre Coca-Cola, Pepsi, Sprite, ou Fanta.</p>
-                        <p>Preço: R$ 4,00</p>
-
-                    </div class="lanche">
-                    <div id="suco">
-                        <h2 class="lanche">Suco Natural</h2>
-                        <img src="imagens/suco.png" alt="Suco Natural">
-                        <p>Descrição: Suco fresco de laranja ou limonada.</p>
-                        <p>Preço: R$ 5,00</p>
-                    </div>
-                </div>
-
-
-                <div id="sobremesa">
-                    <div class="lanche">
-                        <h2>Torta de Chocolate</h2>
-                        <img src="imagens/torta.jpg" alt="Torta de Chocolate">
-                        <p>Descrição: Uma fatia generosa de torta de chocolate com calda quente de chocolate.</p>
-                        <p>Preço: R$ 7,00</p>
-                    </div>
-                    <div class="lanche">
-                        <h2>Sorvete de Baunilha com Calda de Caramelo</h2>
-                        <img src="imagens/soverte.jpg" alt="Sorvete de Baunilha com Calda de Caramelo">
-                        <p>Descrição: Sorvete cremoso de baunilha com uma generosa porção de calda de caramelo.</p>
-                        <p>Preço: R$ 6,00</p>
-                    </div>
-                </div>
-
-        </section>
-        <section>
-            <div id="infomacao">
-                <h2>Informações Adicionais</h2>
-                <p>Aceitamos pagamento em dinheiro e cartão de crédito.</p>
-                <p>Entregamos em um raio de 10 km a partir do restaurante.</p>
-                <p>Horário de funcionamento: Segunda a sábado, das 11h às 22h. Fechado aos domingos</p>
+    <div id="botoes">
+        <div class="header" id="header">
+            <button onclick="abrir()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            </button>
+            <div class="navigation_header" id="navigation_header">
+                <button onclick="abrir()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+                <a href="#">Pratos Principais</a>
+                <a href="#">Aperitivos</a>
+                <a href="#">Bebidas</a>
+                <a href="#">Sobremesas</a>
             </div>
-        </section>
-    </main>
+        </div>
+        <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
+
+        <main>
+            <section>
+                <div id="prato-principal">
+                    <div class="lanche">
+                        <h2>Hambúrguer Gourmet</h2>
+                        <img src="imagens/burguer-2.jpg" alt="Hambúrguer Gourmet">
+                        <p>Descrição: Um hambúrguer suculento com queijo derretido, alface fresca, tomate, cebola
+                            caramelizada e nosso molho especial.</p>
+                        <p>Preço: R$ 15,00</p>
+                    </div>
+                    <div class="lanche">
+                        <h2>Massa à Carbonara</h2>
+                        <img src="imagens/carbonara.jpg" alt="Massa à Carbonara">
+                        <p>
+                            Descrição: Espaguete al dente com bacon crocante, ovos, queijo parmesão e pimenta preta.
+                        </p>
+                        <p>Preço: R$ 18,00</p>
+
+                    </div>
+                    <div class="lanche">
+                        <h2>Salmão Grelhado</h2>
+                        <img src="imagens/salmao-grelhado.jpg" alt="Salmão Grelhado">
+                        <p>Descrição: Salmão fresco grelhado e servido com legumes salteados e arroz integral.</p>
+                        <p>Preço: R$ 20,00</p>
+                    </div>
+                    <div id="aperitivo">
+                        <div class="lanche">
+                            <h2>Bruschetta de Tomate e Manjericão</h2>
+                            <img src="imagens/Bruschetta.jpg" alt="Bruschetta de Tomate e Manjericão">
+                            <p>Descrição: Fatias de pão crocante cobertas com tomate fresco, manjericão, alho e azeite
+                                de
+                                oliva.</p>
+                            <p>Preço: R$ 8,00</p>
+                        </div>
+                        <div class="lanche">
+                            <h2>Batatas Fritas Especiais</h2>
+                            <img src="imagens/batata-frita.jpg" alt="Batatas Fritas Especiais">
+                            <p>Descrição: Batatas fritas crocantes temperadas com ervas e servidas com molho de queijo
+                                cheddar.</p>
+                            <p>Preço: R$ 10,00</p>
+                        </div>
+                    </div>
+
+
+                    <div id="bebida">
+                        <div class="lanche">
+                            <h2>Refrigerante (Lata)</h2>
+                            <img src="imagens/refigerante.jpg" alt="Refrigerante (Lata)">
+                            <p>Descrição: Escolha entre Coca-Cola, Pepsi, Sprite, ou Fanta.</p>
+                            <p>Preço: R$ 4,00</p>
+
+                        </div class="lanche">
+                        <div id="suco">
+                            <h2 class="lanche">Suco Natural</h2>
+                            <img src="imagens/suco.png" alt="Suco Natural">
+                            <p>Descrição: Suco fresco de laranja ou limonada.</p>
+                            <p>Preço: R$ 5,00</p>
+                        </div>
+                    </div>
+
+
+                    <div id="sobremesa">
+                        <div class="lanche">
+                            <h2>Torta de Chocolate</h2>
+                            <img src="imagens/torta.jpg" alt="Torta de Chocolate">
+                            <p>Descrição: Uma fatia generosa de torta de chocolate com calda quente de chocolate.</p>
+                            <p>Preço: R$ 7,00</p>
+                        </div>
+                        <div class="lanche">
+                            <h2>Sorvete de Baunilha com Calda de Caramelo</h2>
+                            <img src="imagens/soverte.jpg" alt="Sorvete de Baunilha com Calda de Caramelo">
+                            <p>Descrição: Sorvete cremoso de baunilha com uma generosa porção de calda de caramelo.</p>
+                            <p>Preço: R$ 6,00</p>
+                        </div>
+                    </div>
+
+            </section>
+            <section>
+                <div id="infomacao">
+                    <h2>Informações Adicionais</h2>
+                    <p>Aceitamos pagamento em dinheiro e cartão de crédito.</p>
+                    <p>Entregamos em um raio de 10 km a partir do restaurante.</p>
+                    <p>Horário de funcionamento: Segunda a sábado, das 11h às 22h. Fechado aos domingos</p>
+                </div>
+            </section>
+        </main>
+       
+        </div>
+
+
+        <script src="script.js"></script>
 
 </body>
 
