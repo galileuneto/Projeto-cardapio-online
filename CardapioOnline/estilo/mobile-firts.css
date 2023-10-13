@@ -34,7 +34,7 @@ header {
     margin: auto;
     height: 20vh;
     width: 100%;
-    background-image: linear-gradient(to bottom, #FCA31C, #BF7200);
+    background-image: linear-gradient(to bottom, #FCA31C, #BF7200); 
     font-family: var(--font1);
     text-align: center;
     font-size: 1.5vw;
